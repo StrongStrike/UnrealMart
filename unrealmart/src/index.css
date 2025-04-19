@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.neon-soft {
+  text-shadow:
+    0 0 3px #fff,
+    0 0 6px #a855f7,
+    0 0 12px #9333ea;
+}
+
+#custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(168, 85, 247, 0.3); /* светло-фиолетовый */
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.15s ease-out;
+  backdrop-filter: blur(4px);
+}
+
+html.dark {
+  background-color: #000;
+  color: white;
+}
